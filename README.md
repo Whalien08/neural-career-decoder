@@ -11,7 +11,7 @@
 ### 🌐 Live Uplink (Deployment)
 Access the live application hosted on Google Cloud Run here:
 **[Launch Neural Decoder](https://github-card-frontend-236326372885.asia-south1.run.app)**
-*(Pro tip: Once your card generates, click the download button to export it as a high-res PNG!)*
+* *(Pro tip: Once your card generates, click the download button to export it as a high-res PNG!)*
 
 ![Dashboard View](https://github.com/user-attachments/assets/3a151c78-3482-4156-b11c-91c417a530f1)
 ---
@@ -54,3 +54,33 @@ Clone the repository and create a `.env` file in the main directory to hold your
 ```env
 GITHUB_TOKEN=your_github_token_here
 GOOGLE_API_KEY=your_gemini_key_here
+
+### 2. Boot the Backend Core
+Ensure you have Python installed. Open your terminal in the backend directory and run:
+```bash
+pip install fastapi uvicorn requests google-generativeai python-dotenv
+uvicorn main:app --reload --port 8080
+```
+*The server will stabilize and listen at `http://localhost:8080`.*
+
+### 3. Connect the Frontend Terminal
+Because the frontend uses standalone React and Tailwind JIT via CDN, there is no massive `node_modules` folder to compile. 
+1. Open the `index.html` file using **Live Server** in VS Code (or simply drag and drop the HTML file directly into your web browser).
+2. Enter a valid GitHub target identity and initialize the scan.
+
+---
+
+## 🛡️ Telemetry & Security Notes
+* **API Rate Limits:** This tool relies on the GitHub REST API. Ensure your `GITHUB_TOKEN` is active to prevent rate-limiting during deep neural scans.
+* **Canvas Taint Restraints:** The export script has been heavily hardened against `SecurityError` crashes caused by strict CORS headers on specific user avatars, ensuring 100% stable exports.
+
+---
+
+## 🧠 Acknowledgments
+* Built with FastAPI, React, and AI pair-programming assistance via Google Gemini.
+
+---
+> **Protocol:** UPLINK_v5.5 // **Core:** Final-Academic-Release // **Status:** Operational
+
+```bash
+pip install fastapi uvicorn requests google-generativeai python-dotenv && uvicorn main:app --reload --port 8080
