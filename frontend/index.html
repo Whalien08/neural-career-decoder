@@ -193,7 +193,7 @@
                 if (!searchQuery) return;
                 setLoading(true); setError(null); setResult(null);
                 try {
-                    const response = await fetch(`http://localhost:8080/generate`, {
+                    const response = await fetch("https://github-card-backend-236326372885.asia-south1.run.app/generate", {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ username: searchQuery })
