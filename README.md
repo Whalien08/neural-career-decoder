@@ -12,7 +12,8 @@
 Access the live application hosted on Google Cloud Run here:
 **[Launch Neural Decoder](https://github-card-frontend-236326372885.asia-south1.run.app)**
 
-[Insert a screenshot of your beautiful UI here: `![Dashboard View](link_to_image.png)`]
+[Insert a screenshot of your beautiful UI here: `![Dashboard View](<img width="1724" height="3496" alt="github-card-frontend-236326372885 asia-south1 run app_" src="https://github.com/user-attachments/assets/3a151c78-3482-4156-b11c-91c417a530f1" />
+)`]
 
 ---
 
