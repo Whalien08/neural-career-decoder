@@ -11,6 +11,7 @@
 ### 🌐 Live Uplink (Deployment)
 Access the live application hosted on Google Cloud Run here:
 **[Launch Neural Decoder](https://github-card-frontend-236326372885.asia-south1.run.app)**
+*(Pro tip: Once your card generates, click the download button to export it as a high-res PNG!)*
 
 ![Dashboard View](https://github.com/user-attachments/assets/3a151c78-3482-4156-b11c-91c417a530f1)
 ---
